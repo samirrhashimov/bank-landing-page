@@ -2,9 +2,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-#container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 16px;
@@ -22,15 +23,18 @@ body {
 
 /* Navbar */
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding: 15px 0;
-    align-items: center;
     z-index: 999;
     position: relative;
     background-color: #ffffff;
     width: 100%;
+}
+
+.navbar .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar a {
@@ -178,15 +182,18 @@ body {
 
 /* Footer */
 .footer {
-    display: flex;
-    justify-content: space-between;
     background-color: hsl(233, 26%, 24%);
-    padding: 30px;
+    padding: 30px 0;
 }
 
-.footer_left {
-    
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Added for vertical alignment if needed, though not strictly in original */
 }
+
+.footer_left {}
 
 .footer_column a {
     text-decoration: none;
@@ -200,9 +207,7 @@ body {
     margin: 20px;
 }
 
-.footer_right {
-    
-}
+.footer_right {}
 
 .copyright {
     color: hsl(220, 16%, 96%);
