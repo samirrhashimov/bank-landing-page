@@ -19,6 +19,16 @@ body {
     color: #ffffff;
     font-family: Public Sans;
     font-size: 10px;
+    transition: all 0.5s ease;
+}
+
+.primary_button:hover {
+    border-radius: 50px;
+    border: 1px solid transparent;
+    color: hsl(240, 1%, 31%);
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(45deg, hsl(192, 69%, 51%), hsl(136, 64%, 51%)) border-box;
 }
 
 /* Navbar */
@@ -42,6 +52,15 @@ body {
     color: hsl(233, 8%, 62%);
     font-family: Public Sans;
     font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: hsl(136, 64%, 51%);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+    color: hsl(240, 1%, 31%);
 }
 
 .navlist {
